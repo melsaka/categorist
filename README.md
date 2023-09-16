@@ -56,6 +56,8 @@ You can then modify the configuration file to change the categories table name i
 You can add a new category for a specific model, such as **Post**, by using the `Category::add()` method. If a category with the same **slug** and **type** already exists, it will be **returned** instead. Here's an example:
 
 ```php
+use Melsaka\Categorist\Models\Category;
+
 $data = [
     'name' => 'Foo',
     'slug' => 'foo',
@@ -103,6 +105,8 @@ $isNew = Category::isNew($category);
 To edit a category, use the `Category::edit()` method. Pass the category instance and an array of data to update:
 
 ```php
+use Melsaka\Categorist\Models\Category;
+
 $data = [
     'name' => 'New Category Name',
 ];
