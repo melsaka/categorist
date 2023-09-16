@@ -224,7 +224,7 @@ $ancestors = Category::with('ancestors')->get();
 $descendants = Category::with('descendants')->get();
 ```
 
-**Note**: Check (**Nested Sets**)[https://github.com/lazychaser/laravel-nestedset] package for **more methods** and **details**.
+**Note**: Check [**Nested Sets**](https://github.com/lazychaser/laravel-nestedset) package for **more methods** and **details**.
 
 ## License
 
